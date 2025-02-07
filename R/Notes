@@ -1,0 +1,181 @@
+// January 22
+
+pwd - present working directory
+git status - to check the status of your of the file that you need and the stages
+git log -- log of your history of your branches
+git commit -- to commit changes/ dont forget to save
+git push --force force you to change your time machine commit
+
+
+//January 27
+
+pwd: present working directory
+ls: list of directorys
+cd:change in directory
+.(dot): opens current directory
+..(double dot): jumps to previous file 
+ls -lh: list all folders // human readable format
+~(tilde): Represents the users home directory
+/(slash): Represents the root directory of the file system/ goes to the route of everything
+
+Relative vs. Absolute Path
+- Relative paths start from the cureent directory (e.g, cd ../folder)
+- Absolute paths start from the root directory (e.g., cd/users.home)
+
+Creating and Deleting Files and Directories
+
+Create a file:
+- touch filename.txt #
+
+Create a directory
+- mkdir directory_name
+
+Remove a file:
+-rm filename.txt
+
+Remove a directory:
+rmdir directory
+
+Move a file: 
+- mv file name
+
+Displaying text with echo
+basic usage:
+echo "hello, unix"
+Redirecting output file:
+echo "this is line of text " > file.txt
+ echo wc : counts the numbers
+
+
+
+ nano file.txt: will create a new txt file
+
+
+Modes:
+i: insert mode (to edit text)
+ESC: Command mode
+
+Basic commands:
+w: Write file
+q: quit editor
+wq write and quit
+q!: Quit without saving
+
+Navigation:
+h,j,k,l: move l
+
+//Jan 29
+
+my token: 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
+
+
+vim text: Text Editor    ESC to escape then (i) to enter text, colon and enter to leave out of vim wq to leave out of vim
+nano text: Text Editor   
+
+
+Download data
+make sure the data is downloaded to the directory that you wantpwd
+
+1 Using wget
+- wget adresshere
+2. Using curl
+- curl -O addresshere  capital o
+
+Viewing text Files
+view the contents of a file:
+- cat file.txt
+View the first or last lines
+- head -n # file.txt
+- tail -n # file.txt
+
+Understanding ls -l Output
+1. -rw-r--r--: File type and permissions
+The first character indicates the type of file
+- -: regular
+- d: Directory
+- l: Symbolic link (symlink)
+
+The next 9 characters split into groups
+
+split into 3 groups of 3 characters each
+Owner: first three characters
+Group: Middle three characters 
+Others: Last three characters
+
+r read permission
+w write permission
+x execute permission
+- no permission
+
+Example:
+rw-: Read and write, but no execute
+r--: read only
+rwx: read write and execute
+
+
+Changing Permissions
+
+Change permissions:
+chmod 756 file.txt
+
+read r : 4
+Write  w : 2
+Execute x ; 1
+No permission: 0
+How to Write a Script File
+
+1. use a text editor like nano or vim to create a script file
+Ex. nano myscript.sh
+
+2  add commands to the script
+Begin with a she bang to specify the shell interpreter
+- #!/bin/bash
+- echo""
+- pwd
+date
+
+how to run a script file
+- bash my_script.sh
+
+1. Make the script executable:
+700
+Managing processes
+
+kill PID: to kill a process
+
+Background 
+t
+
+History and Shcortcuts
+history
+
+!!: repeats command-
+
+February 2
+
+Logical Test Operators
+
+- Less than
+less than or equal
+- Euality and inequality
+- Logical Not
+
+
+c() function to concotatenate multiple elements to a vector 
+Length of a vector 
+to check the number of elements of a vector, use length
+
+Vectorized operations
+mean veccto
+
+REPL vs SCript
+
+Read evaluate, Pringt , Loop
+
+
+case sensitive 
+cannot have white space
+cannot start with numbers
+
+readline() gemerates prompcdt for interactive input
+the response can be a value and assigned as an objed\ct
